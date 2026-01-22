@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Dev News</title>
+
+  <!-- Fonte Montserrat (Figma) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <h1 class="brand">The Dev News</h1>
+
+      <button class="menu-btn" aria-label="Abrir menu" aria-expanded="false" aria-controls="nav">
+        ☰
+      </button>
+
+      <nav id="nav" class="nav">
+        <a href="#recentes">Posts</a>
+        <a href="#populares">Populares</a>
+        <a href="#categorias">Categorias</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- MAIN -->
+  <main class="container layout">
+    <!-- CONTENT -->
+    <section class="content">
+      <!-- HERO -->
+      <article class="hero">
+        <a class="hero-media" href="#" aria-label="Abrir post em destaque">
+          <img
+            src="./assets/img/imagem.jpg"
+            alt="Cidade à noite com prédios iluminados"
+            loading="lazy"
+          />
+          <div class="hero-overlay">
+            <span class="hero-tag">opinião</span>
+            <h2 class="hero-title">Como é ser um desenvolvedor</h2>
+            <p class="hero-by">By Fabio Tetsuo</p>
+          </div>
+        </a>
+      </article>
+
+      <!-- HEADER DA SEÇÃO -->
+      <header class="section-head" id="recentes">
+        <h3>Posts mais recentes</h3>
+        <a class="link" href="#">Ver todos</a>
+      </header>
+
+      <!-- POSTS GRID -->
+      <div class="grid-posts">
+        <!-- Card 1 -->
+        <article class="card">
+          <a class="card-media" href="#" aria-label="Abrir post Desenvolvimento mobile">
+            <img src="./assets/img/imagem4.jpg" alt="Celular sobre uma mesa" loading="lazy" />
+          </a>
+          <div class="card-body">
+            <span class="card-tag">desenvolvimento</span>
+            <h4 class="card-title"><a href="#">Desenvolvimento mobile</a></h4>
+            <p class="card-meta">By Fabio Tetsuo</p>
+            <p class="card-text">
+              Lorem ipsum dolor sit amet consectetur. In vitae urna commodo amet congue integer dapibus.
+            </p>
+            <p class="card-date">22 Agosto 2022</p>
+          </div>
+        </article>
+
+        <!-- Card 2 -->
+        <article class="card">
+          <a class="card-media" href="#" aria-label="Abrir post Balancear vida profissional e pessoal">
+            <img src="./assets/img/imagem5.jpg" alt="Câmera sendo usada" loading="lazy" />
+          </a>
+          <div class="card-body">
+            <span class="card-tag">saúde</span>
+            <h4 class="card-title"><a href="#">Balancear vida profissional e pessoal</a></h4>
+            <p class="card-meta">By Ridho Satriwan</p>
+            <p class="card-text">
+              Lorem ipsum dolor sit amet consectetur. Et consectetur ut sit amet consectetur sed nisl tempor.
+            </p>
+            <p class="card-date">22 Agosto 2022</p>
+          </div>
+        </article>
+
+        <!-- Card 3 -->
+        <article class="card">
+          <a class="card-media" href="#" aria-label="Abrir post Configurando VSCode">
+            <img src="./assets/img/imagem6.jpg" alt="Código em uma tela de notebook" loading="lazy" />
+          </a>
+          <div class="card-body">
+            <span class="card-tag">desenvolvimento</span>
+            <h4 class="card-title"><a href="#">Configurando VSCode</a></h4>
+            <p class="card-meta">By Fabio Tetsuo</p>
+            <p class="card-text">
+              Lorem ipsum dolor sit amet consectetur. Tellus vitae urna commodo amet congue integer dapibus.
+            </p>
+            <p class="card-date">22 Agosto 2022</p>
+          </div>
+        </article>
+
+        <!-- Card 4 -->
+        <article class="card">
+          <a class="card-media" href="#" aria-label="Abrir post 2 monitores ou 1 ultrawide?">
+            <img src="./assets/img/imagem7.jpg" alt="Setup com monitores" loading="lazy" />
+          </a>
+          <div class="card-body">
+            <span class="card-tag">produtividade</span>
+            <h4 class="card-title"><a href="#">2 monitores ou 1 ultrawide?</a></h4>
+            <p class="card-meta">By Fulano da Silva</p>
+            <p class="card-text">
+              Lorem ipsum dolor sit amet consectetur. Arcu molestie posuere enim pretium scelerisque.
+            </p>
+            <p class="card-date">22 Agosto 2022</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+      <!-- POPULARES -->
+      <section class="panel" id="populares">
+        <h3 class="panel-title">Posts populares</h3>
+
+        <a class="mini" href="#" aria-label="Abrir post Desenvolvimento atual">
+          <img src="./assets/img/imagem1.jpg" alt="Pessoa trabalhando no notebook" loading="lazy" />
+          <div class="mini-body">
+            <strong>Desenvolvimento atual</strong>
+            <span>22 Agosto 2022</span>
+          </div>
+        </a>
+
+        <a class="mini" href="#" aria-label="Abrir post GitLab vs GitHub">
+          <img src="./assets/img/imagem2.jpg" alt="GitLab na tela" loading="lazy" />
+          <div class="mini-body">
+            <strong>GitLab vs GitHub</strong>
+            <span>22 Agosto 2022</span>
+          </div>
+        </a>
+
+        <a class="mini" href="#" aria-label="Abrir post Café atrapalha?">
+          <img src="./assets/img/imagem3.jpg" alt="Xícara de café ao lado do notebook" loading="lazy" />
+          <div class="mini-body">
+            <strong>Café atrapalha?</strong>
+            <span>22 Agosto 2022</span>
+          </div>
+        </a>
+      </section>
+
+      <!-- CATEGORIAS -->
+      <section class="panel" id="categorias">
+        <h3 class="panel-title">Categorias</h3>
+        <ul class="cats">
+          <li><a href="#">saúde <span>(1)</span></a></li>
+          <li><a href="#">desenvolvimento <span>(2)</span></a></li>
+          <li><a href="#">produtividade <span>(2)</span></a></li>
+          <li><a href="#">opinião <span>(1)</span></a></li>
+        </ul>
+      </section>
+    </aside>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>Copyright@The Dev News</p>
+    </div>
+  </footer>
+
+  <script>
+    // Menu Mobile (igual padrão responsivo)
+    const btn = document.querySelector(".menu-btn");
+    const nav = document.querySelector(".nav");
+
+    btn.addEventListener("click", () => {
+      const open = nav.classList.toggle("nav--open");
+      btn.setAttribute("aria-expanded", open ? "true" : "false");
+    });
+  </script>
+</body>
+</html>
+
